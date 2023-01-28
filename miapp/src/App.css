@@ -1,0 +1,97 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url('./assets/lukasz-szmigiel-ps2daRcXYes-unsplash.jpg');
+  background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.game-board {
+  width: 600px;
+  height: 500px;
+  background-color:gold;
+  border: 3px solid #07ff07;
+  box-shadow: 2px 2px 15px #000000 inset;
+  text-align: center;
+  color: #e8e8e8;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico';
+  margin: 0 auto;
+  }
+.game-board:hover{
+  color: #07ff07;
+  box-shadow: 2px 2px 15px #07ff07 inset;
+}
+  
+  .row {
+  font-size:20vh;
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: brown;
+  }
+  .o-player {
+    color: blue;
+  }
+
+  .cell {
+    width: 33.33%;
+    height: 100%;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .cell:hover {
+  background-color: lightgray;
+  }
+  
+  
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 40px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  button {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  button:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 75px rgb(0,140,255);
+  }
+
+  @media (min-width: 600px) {
+    .game-board{
+      height: 470px;
+      margin-top: 20px;
+    }
+    .cell {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .cell {
+      font-size: 6rem;
+    }
+  }
