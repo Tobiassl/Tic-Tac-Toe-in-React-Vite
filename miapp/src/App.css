@@ -2,13 +2,12 @@ body{
   margin: 0;
   padding: 0;
   background: url('./assets/lukasz-szmigiel-ps2daRcXYes-unsplash.jpg');
-  background-repeat: no-repeat;
-    object-fit: cover;
-    background-size: cover;
+  background-size: cover;
 }
 
 .game-board {
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   height: 500px;
   background-color:gold;
   border: 3px solid #07ff07;
@@ -52,8 +51,6 @@ body{
   background-color: lightgray;
   }
   
-  
-  
   button {
     padding: 10px 20px;
     margin-top: 40px;
@@ -79,6 +76,25 @@ body{
                 0 0 50px rgb(0,140,255),
                 0 0 75px rgb(0,140,255);
   }
+
+  @media (max-width: 600px) {
+    body {
+      background-size: cover;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 900px) {
+    body {
+      background-size: cover;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    body {
+      background-size: cover;
+    }
+  }
+  
 
   @media (min-width: 600px) {
     .game-board{
